@@ -72,6 +72,8 @@
     "sinon": "^15.2.0",
     "stripe": "^12.18.0",
     "superagent": "^8.1.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
     "universal-analytics": "^0.5.3",
     "useragent": "^2.1.9",
     "uuid": "^9.0.0",

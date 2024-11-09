@@ -3,6 +3,8 @@ import express from 'express';
 import http from 'http';
 import logger from './libs/logger';
 
+const { specs, swaggerUi } = require('./swagger');
+
 // Setup translations
 // Must come before attach middlewares so Mongoose validations can use translations
 import './libs/i18n';
@@ -23,6 +25,8 @@ const server = http.createServer();
 const app = express();
 
 app.set('port', nconf.get('PORT'));
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 attachMiddlewares(app, server);
 
