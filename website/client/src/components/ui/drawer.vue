@@ -167,9 +167,10 @@
       justify-content: center;
 
       top: calc(50% - 30px);
-      left: 24px;
       right: 0;
       position: absolute;
+
+      width: 100%;
 
       & .content {
         background-color: rgba($gray-200, 0.5);
